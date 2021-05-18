@@ -42,8 +42,8 @@ const checkYuGiOh = (limit) => {
     let fNumber = Number(limit);
 
     if (isNaN(fNumber)) {
-      console.log("this is not a number can't be converted to one");
-      return `this is not a number can't be converted to one`;
+      let err = `invalid parameter: ${limit}`
+      return err;
     } else {
       let myArray = [];
       engine(fNumber, myArray);
